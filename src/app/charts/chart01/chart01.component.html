@@ -1,0 +1,10 @@
+<svg>
+  @for(rec of wdata; track rec; let idx = $index ){
+  <rect
+    [attr.x]="idx * width"
+    [attr.y]="250 - rec"
+    [attr.width]="width"
+    [attr.height]="rec"
+  ></rect>
+  }
+</svg>
